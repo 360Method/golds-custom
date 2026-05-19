@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /apply.html
+Disallow: /apply
+Disallow: /Golds_Driver_App_W9_Mobile.pdf
