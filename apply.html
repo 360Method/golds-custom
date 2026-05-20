@@ -8,6 +8,7 @@
 <meta name="description" content="Driver application packet for Golds Custom Services." />
 <meta name="theme-color" content="#0F2A44" />
 
+<link rel="icon" type="image/png" href="img/favicon.png" />
 <link rel="preconnect" href="https://docs.google.com" />
 <link rel="stylesheet" href="styles.css" />
 </head>
@@ -16,54 +17,86 @@
 <header class="site-header" id="top">
   <div class="container nav-row">
     <a class="brand" href="/" aria-label="Golds Custom Services home">
-      <span class="brand-mark">GCS</span>
-      <span class="brand-name">Golds Custom Services, Inc.</span>
+      <img src="img/logo-nav.png" alt="Golds Custom Services, Inc." class="brand-logo" width="134" height="40" />
     </a>
   </div>
 </header>
 
 <main>
 
-  <section class="hero" aria-label="Driver application">
-    <div class="container" style="max-width: 760px;">
+  <section class="hero apply-hero" aria-label="Driver application">
+    <div class="container apply-hero-inner">
       <p class="kicker">Driver Application</p>
-      <h1 style="font-family: Georgia, serif; font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--cream); margin: 8px 0 14px;">Welcome — you're at the application step.</h1>
-      <p class="lede" style="color: var(--cream); opacity: .92;">Maria sent you here because we'd like to move forward. Below is the application packet and the upload form. Three steps.</p>
+      <h1>You're in — let's get the paperwork done.</h1>
+      <p class="lede apply-lede">Three steps below. It takes most drivers about 10 minutes.</p>
+      <div class="apply-progress" aria-label="Application steps overview">
+        <div class="progress-step">
+          <span class="progress-num">1</span>
+          <span class="progress-label">Download</span>
+        </div>
+        <span class="progress-connector" aria-hidden="true"></span>
+        <div class="progress-step">
+          <span class="progress-num">2</span>
+          <span class="progress-label">Fill Out</span>
+        </div>
+        <span class="progress-connector" aria-hidden="true"></span>
+        <div class="progress-step">
+          <span class="progress-num">3</span>
+          <span class="progress-label">Upload</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section drivers" aria-label="Application steps">
-    <div class="container" style="max-width: 760px;">
+  <section class="section apply-steps" aria-label="Application steps">
+    <div class="container apply-container">
 
-      <h2 class="how-it-works" style="margin-top: 0;">Step 1 — Download the application</h2>
-      <p style="color: var(--cream); opacity: .9;">It's a fillable PDF. You can type into it on your phone or computer, or print it and write it out.</p>
-      <div class="apply-block apply-block--two" style="margin-bottom: 32px;">
-        <a class="btn btn-primary btn-download"
-           href="Golds_Driver_App_W9_Mobile.pdf"
-           target="_blank" rel="noopener" download>
-          Download Application (PDF)
-        </a>
+      <div class="apply-step-card">
+        <div class="apply-step-num" aria-hidden="true">1</div>
+        <div class="apply-step-body">
+          <h2>Download the application</h2>
+          <p>It's a fillable PDF. You can type directly into it on your phone or computer, or print it and write it out by hand.</p>
+          <a class="btn btn-primary btn-download"
+             href="golds_driver_app_w9_mobile.pdf"
+             target="_blank" rel="noopener" download>
+            Download Application (PDF)
+          </a>
+        </div>
       </div>
 
-      <h2 class="how-it-works">Step 2 — Fill it out</h2>
-      <p style="color: var(--cream); opacity: .9; margin-bottom: 32px;">Take your time. Make sure your name matches your CDL exactly. Sign and date the last page.</p>
-
-      <h2 class="how-it-works">Step 3 — Upload it</h2>
-      <p style="color: var(--cream); opacity: .9;">Use the secure upload form to send us the filled application along with photos of your CDL (front and back) and current DOT medical card. Google sign-in is required for the upload.</p>
-      <div class="apply-block apply-block--two">
-        <a class="btn btn-primary btn-online"
-           href="https://docs.google.com/forms/d/e/1FAIpQLSdJqERzoP3X6xSrzCpv7_lyq_BpU5XStxze7qmbUYK9P8Y4fQ/viewform"
-           target="_blank" rel="noopener">
-          Open the Upload Form
-        </a>
+      <div class="apply-step-card">
+        <div class="apply-step-num" aria-hidden="true">2</div>
+        <div class="apply-step-body">
+          <h2>Fill it out</h2>
+          <p>Take your time. Make sure your <strong>name matches your CDL exactly</strong>. Sign and date the last page before uploading.</p>
+          <p class="apply-tip">Tip: If you're on a phone, open the PDF in your browser and use the fill-in fields — no app needed.</p>
+        </div>
       </div>
 
-      <div class="care-block" style="margin-top: 32px;">
+      <div class="apply-step-card">
+        <div class="apply-step-num" aria-hidden="true">3</div>
+        <div class="apply-step-body">
+          <h2>Upload it</h2>
+          <p>Use the secure upload form to send us:</p>
+          <ul class="upload-checklist">
+            <li>Completed application (PDF)</li>
+            <li>CDL — front and back</li>
+            <li>Current DOT medical card</li>
+          </ul>
+          <p class="apply-note-small">Google sign-in is required for the upload form.</p>
+          <a class="btn btn-primary btn-online"
+             href="https://docs.google.com/forms/d/e/1FAIpQLSdJqERzoP3X6xSrzCpv7_lyq_BpU5XStxze7qmbUYK9P8Y4fQ/viewform"
+             target="_blank" rel="noopener">
+            Open the Upload Form
+          </a>
+        </div>
+      </div>
+
+      <div class="care-block apply-fallback">
         <h3>Can't sign in to Google?</h3>
-        <p>No problem. Email everything to <a href="mailto:maria@goldscustom.com" style="color: var(--gold-2);">maria@goldscustom.com</a> as attachments. Or call <a href="tel:+12192527037" style="color: var(--gold-2);">(219) 252-7037</a> and we'll figure it out together.</p>
+        <p>No problem. Email everything to <a href="mailto:maria@goldscustom.com">maria@goldscustom.com</a> as attachments. Or call <a href="tel:+12192527037">(219) 252-7037</a> and we'll sort it out together.</p>
+        <p class="dropoff-note">Prefer to drop off in person? Wanatah, IN — call first so someone is there.</p>
       </div>
-
-      <p class="dropoff" style="margin-top: 28px;">Prefer to drop off in person? Wanatah, IN — call first.</p>
 
     </div>
   </section>
@@ -72,7 +105,7 @@
 
 <footer class="site-footer">
   <div class="container footer-row">
-    <p>&copy; <span id="year"></span> Golds Custom Services, Inc. &middot; A small family business.</p>
+    <p>&copy; <span id="year"></span> Golds Custom Services, Inc. &middot; A small family carrier.</p>
     <p>USDOT 3833739 &middot; Wanatah, IN &middot; <a href="mailto:maria@goldscustom.com">maria@goldscustom.com</a> &middot; <a href="tel:+12192527037">(219) 252-7037</a></p>
   </div>
 </footer>
