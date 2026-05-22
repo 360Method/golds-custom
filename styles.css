@@ -568,6 +568,95 @@ a:hover, a:focus { text-decoration: underline; }
 .care-block a { color: var(--gold-2); }
 .care-block a:hover { color: var(--cream); }
 
+/* ---------- Vision quote ---------- */
+
+.vision-quote {
+  margin: 28px 0 0;
+  padding: 20px 22px;
+  border-left: 4px solid var(--gold);
+  background: rgba(201,162,74,.07);
+  border-radius: 0 10px 10px 0;
+}
+.vision-quote p {
+  margin: 0 0 8px;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--navy);
+  font-style: italic;
+}
+.vision-quote cite {
+  font-size: .82rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+}
+
+/* ---------- Core Values ---------- */
+
+.core-values {
+  background: var(--navy);
+  color: var(--cream);
+}
+.core-values h2 { color: var(--cream); }
+
+.values-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 44px;
+}
+.values-sub {
+  color: rgba(247,241,227,.72);
+  font-size: 1rem;
+  margin: 8px 0 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.value-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.09);
+  border-top: 3px solid var(--gold);
+  border-radius: 10px;
+  padding: 26px 24px;
+  position: relative;
+}
+
+.value-num {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgba(201,162,74,.18);
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: -.02em;
+}
+
+.value-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  color: var(--gold-2);
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+.value-card p {
+  color: rgba(247,241,227,.82);
+  font-size: .94rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .values-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- Apply page ---------- */
 
 .apply-hero { padding-bottom: 48px; }
